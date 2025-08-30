@@ -4,18 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Teste</title>
+    <title>MyNotes</title>
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+     <link href="icons/stickynotes_icon.svg" rel="icon" class="sideicon">
+
 </head>
 <body>
-    <h2>Menu</h2>
-    <div id="divbusca">
-        
-    </div>
-    <h1>Olá mundo</h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu_title">
+                <h1>Menu</h1>
+            </div>
+            <div class="search_bar">
+                <form action="/search" method="get"></form>
+                <input type="text" placeholder="Encontrar anotações" aria-label="Barra de Pesquisa">
+                <button type="submit">Pesquisar</button>
+            </div>
+            <p class="menuText">Anotações</p>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><img src="icons/doublearrow_icon.svg" alt="Em breve"> Em breve</a></li>
+                    <li><a href="#"><img src="icons/checklist_icon.svg" alt="Hoje"> Hoje</a></li>
+                    <li><a href="#"><img src="icons/calendar_icon.svg" alt="Calendário"> Calendário</a></li>
+                    <li><a href="#"><img src="icons/stickynotes_icon.svg" alt="Notas Adesivas"> Notas Adesivas</a></li>
+                </ul>
+            </nav>
+            <hr class="separator">
+            <p class="menuText">Listas</p>
+            <nav class="menu2">
+                <ul>
+                    <li><a href="#"><img src="icons/blue_rectangle.svg" alt="Trabalho"> Trabalho</a></li>
+                    <li><a href="#"><img src="icons/orange_rectangle.svg" alt="Pessoal"> Pessoal</a></li>
+                    <li><a href="#"><img src="icons/yellow_rectangle.svg" alt="Lista 1"> Lista 1</a></li>   
+                </ul>
+            </nav>
+        </div>
 </body>
 </html>

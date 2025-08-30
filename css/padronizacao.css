@@ -4,3 +4,107 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #FAFAFA;
+}
+.sideicon {
+    width: 300px;
+    height: 30px;
+}
+.container{
+    display: flex;
+}
+
+.sidebar {
+    margin-left: 20px;
+    width: 350px;
+    height: calc(100vh - 40px);
+    margin: 20px 0 20px 20px;
+    background-color: #E6E6E6;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.menuText {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.search_bar {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.search_bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #FAFAFA;
+    border-radius: 10px 0 0 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.search.bar input:focus {
+    border-color: #333;
+}
+
+.search_bar button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;}
+
+.search_bar button:hover {
+    background-color: #555;
+    }
+
+.menu li a:hover{
+    background-color: #D4D4D4;
+    border-radius: 5px;
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #D8D8D8;
+    margin: 20px 0;
+}
+
+.menu2 li:hover{
+    background-color: #D4D4D4;
+    border-radius: 5px;
+}
+
+.menu2 img {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
