@@ -40,7 +40,7 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 0;
+    padding: 10px 0px;
     font-size: 16px;
     overflow-y: auto;
 }
@@ -94,7 +94,8 @@ body{
 .menu img {
     width: 30px;
     height: 30px;
-    padding: 1vh;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 .separator {
@@ -113,26 +114,79 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 16px;
 }
 .menu2 img {
     width: 30px;
     height: 30px;
-    padding: 1vh;
+    padding: 5px;
+    margin-left: 5px;
 }
 .addListButton {
-    margin-top: auto;
-    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
     font-size: 16px;
-    background-color: #E6E6E6;
-    border: none;
-    width: 100%;
-    text-align: left;
-    height: 50px;
 }
 .addListButton:hover {
     background-color: #D4D4D4;;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.addicon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.settingsButton {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    font-size: 16px;
+    position: relative;
+}
+.settingsButton:hover {
+    background-color: #D4D4D4;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20em;
+}
+
+.settingsicon {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.logout_button {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    font-size: 16px;
+    position: relative;
+}
+.logout_button:hover {
+    background-color: #D4D4D4;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20em;
+}
+
+.bottom-buttons {
+    position: absolute;
+    bottom: 5%;
 }
