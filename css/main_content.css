@@ -111,9 +111,33 @@ h1, h2, p{
 }
 
 h3 {
+    
     font-family: Inter;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #333;
+}
+
+/* Estilos do Pop-up de Aviso */
+.limit-warning-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-family: 'Inter';
+    font-size: 14px;
+    animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
 }
