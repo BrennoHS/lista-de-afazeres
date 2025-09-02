@@ -124,3 +124,10 @@ function showLimitWarning() {
 }
 
 updateEditableNotes();
+
+//
+document.addEventListener("paste", function(e) {
+  e.preventDefault();
+  const texto = (e.clipboardData || window.clipboardData).getData("text/plain");
+  document.execCommand("insertText", false, texto);
+});

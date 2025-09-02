@@ -197,7 +197,9 @@ body{
 }
 
 .bottom-buttons {
-    margin-top: 100px;
+    position: absolute; /* Mesma padding do .sidebar */
+    width: calc(350px - 30px); /* Mesma largura do .sidebar menos a padding */
+    bottom: 30px;
     display: flex;
     flex-direction: column;
 }
