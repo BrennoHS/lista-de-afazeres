@@ -43,12 +43,8 @@ h1, h2, p{
     overflow-y: auto;
 }
 
-.note_title{
-    margin-bottom: 10px
-}
-
 .addNoteButton{
-    border: 1px solid #A9A9A9;
+    border: 0.1px solid #A9A9A9;
 }
 .addNoteButton img{
     width: 50px;
