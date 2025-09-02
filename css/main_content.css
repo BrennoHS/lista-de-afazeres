@@ -43,6 +43,13 @@ h1, h2, p{
     overflow-y: auto;
 }
 
+.note-card h3{
+    color: #333;
+    font-family: Inter;
+    max-width: 100%;
+    
+}
+
 .addNoteButton{
     border: 0.1px solid #A9A9A9;
 }
