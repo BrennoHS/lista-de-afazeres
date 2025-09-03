@@ -8,13 +8,14 @@
     background-color: #E6E6E6;
     border-radius: 10px;
     overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(1, 0.1, 1, 0.1);
 }
 
 header{
     width: 100%;
     font-size: 20px;
     margin-bottom: 20px;
-    padding: 20px 10px 20px 10px;
+    padding: 5px 10px 10px 10px;
 }
 
 h1, h2, p{
