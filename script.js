@@ -70,24 +70,42 @@ function createNote(title = 'Nova Nota', content = 'Clique para editar...', isEx
         menuItem.innerHTML = `<a href="#">${iconHtml} ${e.target.textContent}</a>`;
     });
 
-    // Atualizar título no menu lateral ao editar o título da nota e limitar a 29 caracteres
+    // Atualizar título no menu lateral ao editar o título da nota e limitar a 15 caracteres
     h3.addEventListener('input', (e) => {
         let text = e.target.textContent;
-    if (text.length > 29) {
-        text = text.substring(0, 29);
-        e.target.textContent = text;
-        showLimitWarning(); // Chamada para mostrar o pop-up
+        if (text.length > 15) {
+            text = text.substring(0, 15);
+            e.target.textContent = text;
+            showLimitWarning('O título é limitado a 15 caracteres.');
 
-        // Opcional: para reposicionar o cursor no final do texto truncado
-        const selection = window.getSelection();
-        const range = document.createRange();
-        range.selectNodeContents(e.target);
-        range.collapse(false);
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
-    menuItem.innerHTML = `<a href="#">${iconHtml} ${text}</a>`;
-});
+            // Reposicionar o cursor no final do texto truncado
+            const selection = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(e.target);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+        menuItem.innerHTML = `<a href="#">${iconHtml} ${text}</a>`;
+    });
+
+// Limitar conteúdo do parágrafo a 400 caracteres
+    p.addEventListener('input', (e) => {
+        let text = e.target.textContent;
+        if (text.length > 400) {
+            text = text.substring(0, 400);
+            e.target.textContent = text;
+            showLimitWarning('O conteúdo é limitado a 400 caracteres.');
+
+            // Reposicionar o cursor no final do texto truncado
+            const selection = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(e.target);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    });
 
     // Remover nota e item do menu lateral
     removeButton.addEventListener('click', () => {
@@ -111,10 +129,10 @@ addNoteButton.addEventListener('click', () => {
     createNote();
 });
 
-function showLimitWarning() {
+function showLimitWarning(message) {
     const warningPopup = document.createElement('div');
     warningPopup.classList.add('limit-warning-popup');
-    warningPopup.textContent = 'O título é limitado a 30 caracteres.';
+    warningPopup.textContent = message;
     document.body.appendChild(warningPopup);
 
     // Remover o pop-up após 2 segundos
