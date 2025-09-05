@@ -1,20 +1,25 @@
 .main-content{
     flex: 1;
     width: 100%;
-    padding: 7px;
+    padding: 5px;
     height: calc(100vh - 20px - 20px);
     margin: 20px 20px 20px 20px;
     color: white;
     background-color: #E6E6E6;
     border-radius: 10px;
     overflow-y: auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 header{
     width: 100%;
     font-size: 20px;
     margin-bottom: 20px;
-    padding: 5px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 h1, h2, p{
@@ -94,6 +99,11 @@ h1, h2, p{
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .note-card h3{
@@ -118,7 +128,6 @@ h1, h2, p{
 }
 
 h3 {
-    
     font-family: Inter;
     font-size: 18px;
     font-weight: 700;

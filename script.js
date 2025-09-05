@@ -45,8 +45,8 @@ function createNote(title = 'Nova Nota', content = 'Clique para editar...', isEx
     // Append para remover nota e conteúdo da nota
     note.appendChild(removeButton);
     note.appendChild(noteContent);
-    notesArea.insertBefore(note, addNoteButton);
-    
+    notesArea.insertBefore(note, addNoteButton);   
+
     // Adicionar ao menu lateral
     const menuList = document.querySelector('.listItems');
     const menuItem = document.createElement('li');
@@ -125,7 +125,7 @@ function showLimitWarning() {
 
 updateEditableNotes();
 
-//
+// Colar texto sem formatação
 document.addEventListener("paste", function(e) {
   e.preventDefault();
   const texto = (e.clipboardData || window.clipboardData).getData("text/plain");
