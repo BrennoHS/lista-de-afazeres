@@ -3,6 +3,8 @@
 
 ![Sticky Notes App Screenshot](.github/preview.png) <!-- Substitua por um screenshot real do app no GitHub -->
 
+## Acesse o deploy em [MyNotes](https://brennohs.github.io/lista-de-afazeres/)!
+
 ## Descrição
 
 Este é um aplicativo web simples de notas adesivas (sticky notes) que permite aos usuários criar, editar, remover e persistir notas diretamente no navegador. <br> 
