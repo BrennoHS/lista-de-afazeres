@@ -84,10 +84,10 @@ h1, h2, p{
     margin: 0;
 }
 
-.note-content p {
+.note-content p{
     height: 280px;
 }
-.addNoteButton{
+.addNoteButton {
     display: flex;
     flex-direction: column;
     gap: 10px;
